@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+  </head>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    ul,
+    li,
+    p,
+    input,
+    textarea,
+    button {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right bottom, #08203e, #557c93);
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px;
+    }
+    @keyframes changeColor {
+      0% {
+        color: red;
+      }
+      25% {
+        color: rgb(229, 229, 12);
+      }
+      50% {
+        color: rgb(226, 14, 246);
+      }
+      75% {
+        color: green;
+      }
+      100% {
+        color: red;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 300%;
+      animation-name: changeColor;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    p{
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #03611c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background: #0edb26;
+    }
+    .booking button{
+      border:1px solid white;
+      background-color: orange;
+      height: 60px;
+      width: 390px;
+      font-size: x-large;
+      border-radius: 20px;
+    }
+    .booking button:hover{
+      background-color: darkorange;
+      cursor: pointer ;
+      border-radius: 0px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.thomascook.in/hotels">Hotels</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="https://www.thomascook.in/flights">Flights</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to our Travelling Agency</h1>
+        <p>Travel agencies can also serve as general sales agents for airlines that do not have offices in a specific region. A travel agency's main function is to act as an agent, selling travel products and services on behalf of a supplier. </p>
+        <center><a href="https://www.thomascook.in/" class="button" style="margin: 10px; padding: 12px;">Get Started</a></center>
+      </section>
+      <section class="booking">
+        <center>
+          <button class="1">Pre-booking</button>
+          <button class="2">Post-booking </button>
+        </center>
+      </section>
+
+      <section id="about">
+        <h2 style="text-align: center; text-decoration: underline; font-size: x-large;">About Our Agency</h2>
+        <p>"Welcome to Amit Travelling Agency, where wanderlust meets personalized journeys! We're more than just a travel agency; we're your ultimate passport to unforgettable experiences. Our passion lies in curating bespoke adventures tailored to your dreams, whether it's exploring hidden gems off the beaten path, indulging in luxury getaways, or immersing yourself in vibrant cultures worldwide <br>
+        At Amit Travelling Agency, we believe in crafting not just trips but extraordinary narratives, weaving together your aspirations with our expertise to design seamless, one-of-a-kind excursions. Our team of seasoned globetrotters and travel enthusiasts are dedicated to meticulously planning every detail, ensuring each adventure is as unique as you are.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2 style="text-align: center; text-decoration: underline;">Contact Us</h2>
+        <form>
+          <center><input type="text" placeholder="Your Name" style="height: 25px; width: 190px;"/>
+          <input type="email" placeholder="Your Email" style="height: 25px; width: 190px;" />
+          <textarea placeholder="Your Message"></textarea></center>
+         <center> <button type="submit" style="height: 19px; width: 130px; ">Send</button></center>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Travelling Agency</p>
+    </footer>
+  </body>
+</html>
